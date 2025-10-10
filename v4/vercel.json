@@ -7,7 +7,11 @@
   },
   "routes": [
     {
-      "src": "/(css|js|images|favicon\\.svg|assets)/(.*)",
+      "src": "/favicon\\.svg",
+      "dest": "/public/favicon.svg"
+    },
+    {
+      "src": "/(css|js|images|assets)/(.*)",
       "dest": "/public/$1/$2"
     },
     {
@@ -21,11 +25,6 @@
     "APP_DEBUG": "false",
     "APP_URL": "https://my-portfolio-zeta-one-jn0fez3ajs.vercel.app",
     "APP_KEY": "base64:mQO3wa6DFBqPclDdKxERxHpIqLEH84L0p9BHfuxDJ00=",
-    "APP_CONFIG_CACHE": "/tmp/config.php",
-    "APP_EVENTS_CACHE": "/tmp/events.php",
-    "APP_PACKAGES_CACHE": "/tmp/packages.php",
-    "APP_ROUTES_CACHE": "/tmp/routes.php",
-    "APP_SERVICES_CACHE": "/tmp/services.php",
     "VIEW_COMPILED_PATH": "/tmp",
     "ASSET_URL": "/",
     "CACHE_STORE": "array",
