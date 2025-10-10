@@ -10,7 +10,7 @@
     <title>Rohit Sawant - Creative Developer & Designer</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+    <link rel="stylesheet" href="{{ asset('api/css/styles.css') }}">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -85,6 +85,6 @@
     </div>
 
     <!-- JS -->
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('api/js/script.js') }}"></script>
 </body>
 </html>
