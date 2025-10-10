@@ -85,6 +85,6 @@
     </div>
 
     <!-- JS -->
-    <script src="{{ asset('js/script.js') }}"></script>
+    <script src="{{ asset('js/script.js') }}" defer></script>
 </body>
 </html>
