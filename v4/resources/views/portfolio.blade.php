@@ -86,5 +86,6 @@
 
     <!-- JS -->
     <script src="{{ asset('js/script.js') }}" defer></script>
+
 </body>
 </html>
