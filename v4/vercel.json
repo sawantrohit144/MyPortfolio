@@ -7,11 +7,16 @@
   },
   "routes": [
     {
+      "src": "/(css|js|images|favicon.ico)(.*)",
+      "dest": "/public/$1$2"
+    },
+    {
       "src": "/(.*)",
       "dest": "/api/index.php"
     }
   ],
-    "env": {
+  "outputDirectory": "public",
+  "env": {
         "APP_NAME": "LARAVEL",
         "APP_ENV": "production",
         "APP_DEBUG": "false",
@@ -23,8 +28,8 @@
         "APP_ROUTES_CACHE": "/tmp/routes.php",
         "APP_SERVICES_CACHE": "/tmp/services.php",
         "VIEW_COMPILED_PATH": "/tmp",
-	"ASSET_URL": "/",
-	"CACHE_STORE": "array",
+	    "ASSET_URL": "/",
+	    "CACHE_STORE": "array",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
         "SESSION_DRIVER": "cookie"
