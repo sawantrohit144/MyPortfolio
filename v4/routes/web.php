@@ -7,6 +7,8 @@ use App\Http\Controllers\Admin\HeroSectionController;
 use App\Http\Controllers\Admin\SkillSectionController;
 use App\Http\Controllers\Admin\ExperienceController;
 use App\Http\Controllers\Admin\ContactController;
+use Illuminate\Support\Facades\Artisan;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -52,4 +54,11 @@ Route::prefix('admin')->name('admin.')->group(function () {
     Route::resource('experiences', ExperienceController::class);
     Route::resource('contacts', ContactController::class);
     
+});
+
+Route::get('/run-setup', function () {
+    Artisan::call('migrate', ['--force' => true]);
+    Artisan::call('db:seed', ['--force' => true]);
+
+    return "Migration + Seeding completed.";
 });
