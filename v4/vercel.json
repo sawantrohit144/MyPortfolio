@@ -6,20 +6,32 @@
     }
   },
   "routes": [
-    { "src": "/(css|js|images|favicon\\.svg)/(.*)", "dest": "/$1/$2" },
-    { "src": "/(.*)", "dest": "/api/index.php" }
+    {
+      "src": "/(css|js|images|favicon.ico)(.*)",
+      "dest": "/public/$1$2"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/api/index.php"
+    }
   ],
+  "outputDirectory": "public",
   "env": {
-    "APP_NAME": "LARAVEL",
-    "APP_ENV": "production",
-    "APP_DEBUG": "false",
-    "APP_URL": "https://my-portfolio-zeta-one-jn0fez3ajs.vercel.app",
-    "APP_KEY": "base64:mQO3wa6DFBqPclDdKxERxHpIqLEH84L0p9BHfuxDJ00=",
-    "VIEW_COMPILED_PATH": "/tmp",
-    "ASSET_URL": "/",
-    "CACHE_STORE": "array",
-    "CACHE_DRIVER": "array",
-    "LOG_CHANNEL": "stderr",
-    "SESSION_DRIVER": "cookie"
-  }
+        "APP_NAME": "LARAVEL",
+        "APP_ENV": "production",
+        "APP_DEBUG": "false",
+        "APP_URL": "https://my-portfolio-zeta-one-jn0fez3ajs.vercel.app/",
+        "APP_KEY": "base64:mQO3wa6DFBqPclDdKxERxHpIqLEH84L0p9BHfuxDJ00=",
+        "APP_CONFIG_CACHE": "/tmp/config.php",
+        "APP_EVENTS_CACHE": "/tmp/events.php",
+        "APP_PACKAGES_CACHE": "/tmp/packages.php",
+        "APP_ROUTES_CACHE": "/tmp/routes.php",
+        "APP_SERVICES_CACHE": "/tmp/services.php",
+        "VIEW_COMPILED_PATH": "/tmp",
+	    "ASSET_URL": "/",
+	    "CACHE_STORE": "array",
+        "CACHE_DRIVER": "array",
+        "LOG_CHANNEL": "stderr",
+        "SESSION_DRIVER": "cookie"
+    }
 }
