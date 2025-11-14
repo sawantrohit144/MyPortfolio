@@ -19,7 +19,7 @@
   "env": {
         "APP_NAME": "LARAVEL",
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://my-portfolio-zeta-one-jn0fez3ajs.vercel.app/",
         "APP_KEY": "base64:mQO3wa6DFBqPclDdKxERxHpIqLEH84L0p9BHfuxDJ00=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
